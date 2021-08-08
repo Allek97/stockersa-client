@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import PropTypes from "prop-types";
 
 import useOuterClick from "../../utils/UseOuterClick";
-import { searchAssetTiingo } from "../../utils/StockApiConnectorTiingo";
+import { searchAssetTiingo } from "../../utils/apis/StockApiConnectorTiingo";
 import {
     SearchBar,
     SearchInput,

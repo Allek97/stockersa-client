@@ -10,7 +10,7 @@ import AssetExpenses from "./components/AssetExpenses";
 import {
     getAssetFinanceFMP,
     getAssetFinanceRateFMP,
-} from "../../utils/StockApiConnectorFMP";
+} from "../../utils/apis/StockApiConnectorFMP";
 
 export default function AssetFinanace({ ticker }) {
     const [financeData, setFinanceData] = useState([]);

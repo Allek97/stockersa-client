@@ -23,7 +23,8 @@ import {
 // NOTE: FUNCTIONS
 
 // import { getDailyStockForSymbol } from "../../utils/StockApiConnectorAlphaVintage";
-import { getDailyStockForSymbolTiingo } from "../../utils/StockApiConnectorTiingo";
+import { getDailyStockForSymbolTiingo } from "../../utils/apis/StockApiConnectorTiingo";
+import { getDailyAssetPriceFMP } from "../../utils/apis/StockApiConnectorFMP";
 // import { stockDataMock } from "../../dev-data/stockDataMock";
 
 import { getPastDate, formatDate } from "../../utils/DateFunctions";

@@ -12,7 +12,7 @@ import {
 import "./_assetInfo.scss";
 
 import { dateLastRefresh } from "../../utils/DateFunctions";
-import { searchAssetInfoTiingo } from "../../utils/StockApiConnectorTiingo";
+import { searchAssetInfoTiingo } from "../../utils/apis/StockApiConnectorTiingo";
 
 export default function AssetInfo({
     ticker,

@@ -9,7 +9,7 @@ import AssetKeyInfo from "../../components/assetKeyInfo/AssetKeyInfo";
 import AssetNews from "../../components/assetNews/AssetNews";
 import AssetFinance from "../../components/assetFinance/AssetFinance";
 import StockMap from "../../components/maps/StockMap";
-import UsePlaces from "../../components/maps/components/UsePlaces";
+// import UsePlaces from "../../components/maps/components/UsePlaces";
 
 import { ReactComponent as LogoSvg } from "../../assets/svgs/asset.svg";
 // import { ReactComponent as Computer } from "../../assets/svgs/computer.svg";
@@ -92,23 +92,7 @@ export default function StockPage() {
                             }}
                         /> */}
                     </section>
-                    {/* <section
-                        className="stockpage-main__map"
-                        style={{ marginBottom: "5rem" }}
-                    >
-                        <div>
-                            <h1
-                                style={{
-                                    textAlign: "center",
-                                    fontSize: "3rem",
-                                    padding: "1rem",
-                                    color: "white",
-                                }}
-                            >
-                                Stock exchanges around the world
-                            </h1>
-                        </div>
-                    </section> */}
+
                     <section className="stockpage-main__map">
                         <StockMap />
                         {/* <UsePlaces /> */}
