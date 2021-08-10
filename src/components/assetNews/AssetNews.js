@@ -124,6 +124,7 @@ export default function AssetNews({ ticker, assetName }) {
                                     style={{
                                         fontSize: "1.3rem",
                                         color: "#a5a5b1",
+                                        marginRight: "1rem",
                                     }}
                                 >
                                     {dateLastRefresh(news.publishedDate)}

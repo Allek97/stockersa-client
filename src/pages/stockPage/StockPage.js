@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useMediaQuery } from "react-responsive";
 
 import Loading from "../../components/loading/PageLoading";
 import Graph from "../../components/graph/Graph";
@@ -22,7 +23,7 @@ export default function StockPage() {
     const [dataPeriod, setDataPeriod] = useState("1Y");
     const [ticker, setTicker] = useState("FB");
     const [assetName, setAssetName] = useState("Searching...");
-    const [isTiingoApiConsumed, setIsTiingoApiConsumed] = useState(false);
+    const [isFMPApiConsumed, setIsFMPApiConsumed] = useState(false);
 
     // Utilisee pour calculer les ratios
     const [startClose, setStartClose] = useState();
@@ -45,9 +46,8 @@ export default function StockPage() {
 
                         <LogoName>Stockersa</LogoName>
                     </div>
-                    <nav>
-                        <AssetSearch setTicker={setTicker} />
-                    </nav>
+
+                    <AssetSearch setTicker={setTicker} />
                 </header>
 
                 <main className="stockpage-main">
@@ -66,8 +66,8 @@ export default function StockPage() {
                         </AssetInfoStyle>
                         <Graph
                             dataPeriod={dataPeriod}
-                            isTiingoApiConsumed={isTiingoApiConsumed}
-                            setIsTiingoApiConsumed={setIsTiingoApiConsumed}
+                            isFMPApiConsumed={isFMPApiConsumed}
+                            setIsFMPApiConsumed={setIsFMPApiConsumed}
                             ticker={ticker}
                             setStartClose={setStartClose}
                             setLastClose={setLastClose}

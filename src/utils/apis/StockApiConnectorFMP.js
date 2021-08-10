@@ -18,11 +18,16 @@ export const getDailyAssetPriceFMP = (symbol, startDate, endDate) => {
     });
 };
 
-export const getTimelyAssetPriceFMP = (symbol, timeInterval = "1hour") => {
+export const getTimelyAssetPriceFMP = (
+    symbol,
+    startDate,
+    endDate,
+    timeInterval = "1hour"
+) => {
     return axiosInstance.get(`api/fmp/`, {
         params: {
             url: encodeURI(
-                `${FMPURL}/historical-chart/${timeInterval}/${symbol}/?&apikey=${process.env.REACT_APP_FMP_API_KEY}`
+                `${FMPURL}/historical-chart/${timeInterval}/${symbol}/?from=${startDate}&to=${endDate}&apikey=${process.env.REACT_APP_FMP_API_KEY}`
             ),
         },
     });
@@ -38,7 +43,7 @@ export const searchAssetFMP = (query, limit) => {
     return axiosInstance.get(`api/fmp/`, {
         params: {
             url: encodeURI(
-                `${FMPURL}/search/?qury=${query}&limit=${limit}&apikey=${process.env.REACT_APP_FMP_API_KEY}`
+                `${FMPURL}/search/?query=${query}&limit=${limit}&apikey=${process.env.REACT_APP_FMP_API_KEY}`
             ),
         },
     });
