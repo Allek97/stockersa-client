@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
+import { useMediaQuery } from "react-responsive";
 
 import {
     ResponsiveContainer,
@@ -36,7 +37,6 @@ import {
     getFormattedDate,
     numberWithCommas,
 } from "../../utils/UtilFunctions";
-import { useMediaQuery } from "react-responsive";
 
 export default function Graph(props) {
     const {
