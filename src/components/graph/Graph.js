@@ -36,6 +36,7 @@ import {
     getFormattedDate,
     numberWithCommas,
 } from "../../utils/UtilFunctions";
+import { useMediaQuery } from "react-responsive";
 
 export default function Graph(props) {
     const {
@@ -49,6 +50,7 @@ export default function Graph(props) {
     } = props;
 
     const [stockData, setStockData] = useState([]);
+    const isTabPort = useMediaQuery({ query: "(max-width: 56.25em)" });
 
     //NOTE:  Find a better way to do it
     const getLastTradingDate = async () => {
@@ -120,7 +122,7 @@ export default function Graph(props) {
         <>
             {isFMPApiConsumed && (
                 <>
-                    <div>
+                    <div style={isTabPort ? { marginLeft: "-3rem" } : null}>
                         <ResponsiveContainer width="100%" height={700}>
                             <AreaChart
                                 data={stockData}

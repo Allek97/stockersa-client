@@ -8,3 +8,9 @@
     src: local("Poppins"), url(./Poppins-Regular.ttf) format("truetype");
     font-style: normal;
 }
+@font-face {
+    font-family: "PoppinsBold";
+    src: local("PoppinsBold"), url(./Poppins-Regular.ttf) format("truetype");
+    font-weight: 600 !important;
+    font-style: normal;
+}

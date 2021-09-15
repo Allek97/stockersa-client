@@ -36,7 +36,7 @@ export const MapTitle = styled.div`
     font-size: 2.5rem;
     color: #f1f1f1;
 
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 37.5em) and (-webkit-device-pixel-ratio: 2) {
         position: absolute;
         bottom: 3rem;
         right: 0rem;
