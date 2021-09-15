@@ -7,7 +7,7 @@
 @font-face {
     font-family: "RobotoBold";
     src: url(./Roboto-Bold.ttf) format("truetype");
-    font-weight: bold !important;
+    font-weight: 600;
     font-style: normal;
 }
 @font-face {
@@ -18,6 +18,6 @@
 @font-face {
     font-family: "PoppinsBold";
     src: local("PoppinsBold"), url(./Poppins-Bold.ttf) format("truetype");
-    font-weight: 600 !important;
+    font-weight: 600;
     font-style: normal;
 }
