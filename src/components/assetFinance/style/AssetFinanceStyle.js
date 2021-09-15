@@ -282,7 +282,7 @@ export const YearInfo = styled(RawValue)`
         font-size: 1.2rem;
         color: #fff;
 
-        @media only screen and (max-width: 25em) {
+        @media only screen and (max-width: 25em) and (-webkit-device-pixel-ratio: 2) and (-webkit-device-pixel-ratio: 3) {
             right: -10rem;
         }
     }
