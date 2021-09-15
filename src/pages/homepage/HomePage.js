@@ -2,9 +2,6 @@ import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { useMediaQuery } from "react-responsive";
-import { animateSCroll as scroll } from "react-scroll";
-import { useInView } from "react-intersection-observer";
-import ScrollAnimation from "react-animate-on-scroll";
 
 import "./_homepage.scss";
 
@@ -227,7 +224,7 @@ const HomePage = () => {
                         <div>
                             <div ref={exchangesTextRef}>
                                 <h1>
-                                    Covering <span>40+</span> Global Exchanges
+                                    Covering <span>65+</span> Global Exchanges
                                     all over the world
                                 </h1>
                                 <h3>
